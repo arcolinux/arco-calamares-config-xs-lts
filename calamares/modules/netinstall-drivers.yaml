@@ -1,5 +1,18 @@
-- name: "Nvidia is installed by default"
-  description: "Select NVIDIA in BIOS or UEFI - installs the latest Nvidia"
+- name: "Nvidia-lts is installed by default"
+  description: "Select NVIDIA in BIOS or UEFI - installs the latest Nvidia-lts"
+  critical: false
+  hidden: false
+  selected: false
+  immutable: false
+  expanded: false
+  packages:
+    - linux-lts
+    - linux-lts-headers
+    - nvidia-lts
+    - nvidia-settings
+    - nvidia-utils
+- name: "Nvidia for linux kernel"
+  description: "Installs nvidia for linux kernel"
   critical: false
   hidden: false
   selected: false
@@ -9,17 +22,6 @@
     - linux
     - linux-headers
     - nvidia
-    - nvidia-settings
-    - nvidia-utils
-- name: "Nvidia-lts for linux-lts kernel"
-  description: "Installs nvidia-lts for linux-lts kernel"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - linux-lts
-    - linux-lts-headers
-    - nvidia-lts
     - nvidia-settings
     - nvidia-utils
 - name: "Xf86-video-intel"
