@@ -23,7 +23,7 @@
     - linux-headers
     - nvidia
     - nvidia-settings
-    - nvidia-utils     
+    - nvidia-utils
 - name: "Xf86-video-intel"
   description: "Installs xf86-video-intel"
   critical: false
